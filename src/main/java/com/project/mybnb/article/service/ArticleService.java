@@ -65,8 +65,10 @@ public class ArticleService {
     }
 
 
+
     public Page<Article> getArticleList(int page, int size) {
         return articleRepository.findAll(PageRequest.of(page, size,
                 Sort.by("createdAt").descending()));
     }
+
 }
