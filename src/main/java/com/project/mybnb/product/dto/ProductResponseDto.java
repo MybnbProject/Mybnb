@@ -1,4 +1,4 @@
-package com.project.mybnb.article.dto;
+package com.project.mybnb.product.dto;
 
 import lombok.Data;
 
@@ -6,9 +6,9 @@ import java.time.LocalDateTime;
 
 @Data
 
-public class ArticleResponseDto {
+public class ProductResponseDto {
 
-    private long article_id;
+    private long product_id;
     private String content;
     private String category;
     private LocalDateTime createdAt;
